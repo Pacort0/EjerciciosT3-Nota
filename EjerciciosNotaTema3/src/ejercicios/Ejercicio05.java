@@ -17,9 +17,11 @@ public class Ejercicio05 {
 		System.out.print("Introduzca el segundo número: ");
 		//Guardamos el segundo número en la variable 'num2'
 		num2 = sc.nextInt();
-		
+		if(num1 < 0 || num2 < 0) {
+			System.out.print("No introduzca números negativos, por favor.");
+		}
 		//Si los dos números son iguales, se imprime un mensaje de error y se acaba el programa
-		if(num1 == num2) {
+		else if(num1 == num2) {
 			System.out.print("Los números no pueden ser iguales.");
 		}
 		else {
