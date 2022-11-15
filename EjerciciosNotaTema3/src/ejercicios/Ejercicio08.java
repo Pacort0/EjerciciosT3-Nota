@@ -24,14 +24,10 @@ public class Ejercicio08 {
 		else {
 			//Creamos un bucle while infinito
 			while (true) {
-				//Si el número introducido es menor que 0, acabamos la iteración presente y pasamos a la siguiente
-				if(num < 0) {
-					continue;
-				}
 				/*Tras cada iteración, incrementamos el valor del contador en 1. 
-				Además, situamos el contador arriba para que cuente el número introducido antes de entrar al bucle while
-				Se encuentra debajo del continue para que, en caso de que 'num' sea menor a 0, no se incremente el valor de 'contador'*/
+				Además, situamos el contador arriba para que cuente el número introducido antes de entrar al bucle while*/
 				contador++;
+				
 				//Pedimos otro número al usuario y lo guardamos en 'num'
 				System.out.print("Introduzca otro número: ");
 				num = sc.nextInt();
@@ -39,6 +35,10 @@ public class Ejercicio08 {
 				//Si el número introducido es el mismo que el máximo hasta ahora
 				if(num == max) {
 					System.out.println("Ese número ya es el máximo hasta ahora.");
+				}
+				//Si el número es 0, salimos del bucle
+				else if(num == 0) {
+					break;
 				}
 				//Si el número introducido es mayor al máximo hasta ahora, sustituimos el valor almacenado en 'max'
 				else if(num > max) {
