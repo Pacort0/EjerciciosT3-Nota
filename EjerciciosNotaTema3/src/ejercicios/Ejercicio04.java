@@ -20,9 +20,11 @@ public class Ejercicio04 {
 		System.out.print("Introduzca el segundo número: ");
 		//Guardamos el segundo número en la variable 'b'
 		b = sc.nextInt();
-		
+		if(a < 0 || b < 0) {
+			System.out.print("No se pueden introducir números negativos.");
+		}
 		//Si los dos números son iguales, se imprime un mensaje de error y se acaba el programa
-		if (a == b) {
+		else if (a == b) {
 			System.out.print("Los dos números son iguales.");
 		}
 		else {
