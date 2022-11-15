@@ -18,8 +18,8 @@ public class Ejercicio08 {
 		System.out.print("Introduzca un número inicial: ");
 		//Leemos y almacenamos el valor introducido en la variable 'max', ya que es el primer y mayor número introducido
 		max = sc.nextInt();
-		if(max <= 0) {
-			System.out.print("El número debe ser mayor que 0.");
+		if(max == 0) {
+			System.out.print("El número no puede ser 0.");
 		}
 		else {
 			//Creamos un bucle while infinito
@@ -43,10 +43,6 @@ public class Ejercicio08 {
 				//Si el número introducido es mayor al máximo hasta ahora, sustituimos el valor almacenado en 'max'
 				else if(num > max) {
 					max = num;
-				}
-				//Si el número es 0, salimos del bucle
-				else if(num == 0) {
-					break;
 				}
 				//Si ninguna de estas condiciones se dan, incrementamos el valor de 'contadorFallo' en 1
 				else {
