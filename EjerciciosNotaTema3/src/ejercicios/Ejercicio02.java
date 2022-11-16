@@ -3,6 +3,29 @@ package ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio02 {
+	/*Pruebas:
+	 * -Si se sale de rango:
+	 * num = -5
+	 * -> El número introducido es incorrecto
+	 * num = 0
+	 * -> El número introducido es incorrecto
+	 * 
+	 * - Si el número es 1:
+	 * num = 1
+	 * -> El 1 no es un número primo
+	 * 
+	 * - Si el número introducido es 11:
+	 * num = 11
+	 * -> Existen 5 números primos entre 1 y 11
+	 * 
+	 * - Si el número introducido es 5:
+	 * num = 5
+	 * -> Existen 3 números primos entre 1 y 5
+	 * 
+	 * - Si el número introducido es 100:
+	 * num = 100
+	 * -> Existen 25 primos entre 1 y 100
+	 */
 
 	public static void main(String[] args) {
 		//Creamos la variable 'num', en la que guardaremos el número introducido por el usuario
@@ -60,8 +83,6 @@ public class Ejercicio02 {
 				if(primo != false) {
 					//Incrementamos el valor el contador en 1
 					contador++;
-					//Imprimimos que el número en cuestión es primo
-					System.out.println(i + " es primo.");
 				}
 			}
 			//Imprimimos el mensaje final del programa, con todos los datos pertinentes

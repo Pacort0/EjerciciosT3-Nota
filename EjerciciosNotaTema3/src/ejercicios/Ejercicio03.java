@@ -3,7 +3,28 @@ package ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio03 {
-
+	/*Pruebas:
+	 * Se sale de rango:
+	 * num = -4
+	 * -> No se puede hacer un triángulo con esa medida como lado
+	 * num = 0
+	 * -> No se puede hacer un triángulo con esa medida como lado
+	 * 
+	 * - Si el número introducido es 4:
+	 * num = 4
+	 * ->  *
+	 * 	  * *
+	 *   * * *
+	 *  * * * *
+	 *  
+	 *  -Si el número introducido es 5:
+	 *  num = 5
+	 *  ->  *
+	 * 	   * *
+	 *    * * *
+	 *   * * * *
+	 *  * * * * *
+	 */
 	public static void main(String[] args) {
 		//Creamos las variables del programa
 		int num;

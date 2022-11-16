@@ -6,7 +6,7 @@ public class Ejercicio08 {
 
 	public static void main(String[] args) {
 		//Creamos las variables del programa
-		int num = 1;	//Iniciamos la variable 'num' a 1 para que pueda entrar al bucle while
+		int num = 0;
 		int max = 0;
 		int contador = 0;
 		int contadorFallo = 0;

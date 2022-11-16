@@ -3,6 +3,33 @@ package ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio01 {
+	/*Pruebas:
+	 * - Si se sale de rango: 
+	 * horas = 24 
+	 * minutos = 56
+	 * segundos = 12
+	 * -> Los datos introducidos no son correctos o no existen
+	 * horas = 15
+	 * minutos = -6
+	 * segundos = 10
+	 * -> Los datos introducidos no son correctos o no existen
+	 * horas = 15
+	 * minutos =24
+	 * segundos = 76
+	 * -> Los datos introducidos no son correctos o no existen
+	 * 
+	 * - Cambio en variables:
+	 * horas = 23
+	 * minutos = 54
+	 * segundos = 59
+	 * incremento = 10
+	 *  -> 23:55:9
+	 *  horas = 23
+	 *  minutos = 59
+	 *  segundos = 59
+	 *  incremento = 20
+	 *  -> 0:0:19
+	 */
 		public static void main(String[] args) {
 			//Creamos las variables del programa
 			int incremento, segundos, minutos, horas;
